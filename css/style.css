@@ -211,8 +211,16 @@ body {
     transform:translateY(-10px);
 }
 
+/* Service Card main icon white and rotation on hover */
+.service-card:hover > i, 
 .service-card:hover .mb-2 i {
-    transform: scale(1.1) rotateY(180deg);
+    transform: scale(1.1) rotateY(180deg) !important;
+    color: #fff !important;
+}
+
+/* Service Card content white on hover */
+.service-card:hover h3,
+.service-card:hover p {
     color: #fff !important;
 }
 
