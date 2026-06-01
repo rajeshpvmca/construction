@@ -189,7 +189,7 @@ body {
     content:'';
     position:absolute;
     inset:0;
-    background:url('/assets/images/materials1.jpg')
+    background:url('../assets/images/materials1.webp')
     center/cover;
     opacity:0;
     transition:.4s;
@@ -822,7 +822,7 @@ background-color: #ff5e14 !important;
 /* CTA Section */
 .cta-section {
     background: var(--primary);
-    background-image: url('../assets/images/slider1.jpg');
+    background-image: url('../assets/images/slider1.webp'); /* Changed from slider1.jpg to slider1.webp */
     background-size: cover;
     background-position: center;
     background-attachment: fixed; 
@@ -923,7 +923,7 @@ background-color: #ff5e14 !important;
 
 /* Footer Background and Theme Color */
 .footer-section {
-    background-image: url('../assets/images/footer-bg.png'); 
+    background-image: url('../assets/images/footer-bg.webp'); /* Changed from footer-bg.jpg to footer-bg.webp */
     background-size: cover;
     background-position: center;
     position: relative;
