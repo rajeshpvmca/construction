@@ -164,7 +164,7 @@ function initCounters() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        startCounter(entry.target);
+        startCounter(entry.target); // Start counter animation
         observer.unobserve(entry.target); // Stop observing after animation
       }
     });

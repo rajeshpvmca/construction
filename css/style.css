@@ -628,10 +628,17 @@ body {
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     margin: 20px 0;
+    margin: 0; /* Removed vertical margin to allow flexbox to control height */
     position: relative;
     transition: all 0.4s ease;
     border-bottom: 4px solid transparent;
     height: 100%;
+    display: flex; /* Make card a flex container */
+    flex-direction: column; /* Stack content vertically */
+}
+
+.testimonialSlider .swiper-wrapper {
+    align-items: stretch; /* Ensure all slides in a row stretch to the height of the tallest */
 }
 
 .testimonial-card:hover {
@@ -822,7 +829,7 @@ background-color: #ff5e14 !important;
 /* CTA Section */
 .cta-section {
     background: var(--primary);
-    background-image: url('../assets/images/slider1.webp'); /* Changed from slider1.jpg to slider1.webp */
+    background-image: url('../assets/images/slider1.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; 
@@ -921,9 +928,192 @@ background-color: #ff5e14 !important;
     box-shadow: 0 5px 15px rgba(255, 94, 20, 0.4);
 }
 
+/* About Page Specific Styles */
+.about-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px; /* Adjust as needed */
+}
+
+.about-image-wrapper img {
+    transition: transform 0.5s ease;
+}
+
+.about-image-wrapper:hover img {
+    transform: scale(1.05);
+}
+
+/* why choose card */
+.why-choose-us-card,
+.team-card {
+    background: #fff;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid #f1f1f1 !important;
+}
+
+.why-choose-us-card .icon-box {
+    width: 80px;
+    height: 80px;
+    background: #fff3eb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 35px;
+    color: var(--primary);
+    transition: 0.5s;
+}
+
+.why-choose-us-card:hover {
+    background: var(--dark);
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(0, 22, 89, 0.2);
+}
+
+.why-choose-us-card:hover h4 {
+    color: #fff !important;
+}
+
+.why-choose-us-card:hover p {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.why-choose-us-card:hover .icon-box {
+    background: var(--primary);
+    color: #fff;
+    transform: rotateY(360deg);
+}
+/* end */
+
+
+/* Enhanced Team Card Styles */
+.team-card {
+    transition: all 0.4s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15) !important;
+}
+
+.team-img-wrapper img {
+    transition: transform 0.6s ease;
+}
+
+.team-card:hover .team-img-wrapper img {
+    transform: scale(1.1);
+}
+
+.team-social-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 22, 89, 0.7); /* Your theme Dark Blue with opacity */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(2px);
+}
+
+.team-card:hover .team-social-overlay {
+    opacity: 1;
+}
+
+.team-social-overlay ul li {
+    transform: translateY(30px);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    opacity: 0;
+}
+
+.team-card:hover .team-social-overlay ul li {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Staggered delay for icons entrance */
+.team-social-overlay ul li:nth-child(1) { transition-delay: 0.1s; }
+.team-social-overlay ul li:nth-child(2) { transition-delay: 0.15s; }
+.team-social-overlay ul li:nth-child(3) { transition-delay: 0.2s; }
+.team-social-overlay ul li:nth-child(4) { transition-delay: 0.25s; }
+
+.team-social-overlay a {
+    width: 42px;
+    height: 42px;
+    background: #fff;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.team-social-overlay a:hover {
+    background: var(--primary);
+    color: #fff;
+    transform: scale(1.2) rotate(360deg);
+}
+
+/* Tabs Custom Styling */
+.custom-tabs-wrapper .nav-pills .nav-link {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.custom-tabs-wrapper .nav-pills .nav-link.active,
+.custom-tabs-wrapper .nav-pills .nav-link:hover {
+    background-color: var(--primary) !important;
+    color: #fff !important;
+    border-color: var(--primary);
+    transform: translateY(-3px);
+}
+
+.custom-tabs-wrapper .tab-content {
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.max-w-700 {
+    max-width: 700px;
+}
+
+/* Tab Image Uniformity */
+.tab-content img {
+    height: 420px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* Override Bootstrap Primary to theme Orange */
+.bg-primary {
+    background-color: var(--primary) !important;
+    color: #fff !important;
+}
+
+/* Modern Dark Theme Background */
+.bg-dark-theme {
+    background-color: #040d21 !important; 
+}
+
+/* About Page Specific Styles */
+.team-card {
+    border: 1px solid #eee;
+}
+
+
 /* Footer Background and Theme Color */
 .footer-section {
-    background-image: url('../assets/images/footer-bg.webp'); /* Changed from footer-bg.jpg to footer-bg.webp */
+    background-image: url('../assets/images/footer-bg.webp');
     background-size: cover;
     background-position: center;
     position: relative;
