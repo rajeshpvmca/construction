@@ -12,10 +12,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <style>
-        .page-header {
-            background: linear-gradient(rgba(0, 22, 89, 0.8), rgba(0, 22, 89, 0.8)), url('assets/images/project1.webp') center/cover;
-            padding: 120px 0 80px; color: #fff; text-align: center;
-        }
+        /* Specific pricing styles can go here if needed */
     </style>
 </head>
 <body>
@@ -28,15 +25,28 @@
     </div>
     <div id="header-placeholder"></div>
 
-    <section class="page-header">
-        <div class="container" data-aos="fade-down">
-            <h1 class="display-4 fw-bold">Project Pricing Plans</h1>
-            <p class="lead">Transparent pricing for every scale of construction.</p>
+    <section class="slide-bg overflow-hidden" style="background-image:url('assets/images/project1.webp');">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="hero-content text-center text-lg-start">
+                <span class="hero-subtitle mb-4" data-aos="fade-right" data-aos-delay="100">
+                    <i class="fas fa-tags me-2"></i> PRICING PLANS
+                </span>
+                <h1 class="text-white fw-bold mb-4" data-aos="fade-up" data-aos-delay="300">
+                    Transparent <span class="text-primary-glow">Pricing</span> Models
+                </h1>
+                <p class="lead fs-4 mb-5 max-w-700 text-white mx-auto mx-lg-0" data-aos="fade-up" data-aos-delay="500">
+                    We offer flexible and transparent pricing plans for every scale of construction, from small renovations to massive landmarks.
+                </p>
+                <a href="404.html" class="btn thm-btn" data-aos="fade-up" data-aos-delay="700">
+                    Explore Plans +
+                </a>
+            </div>
         </div>
     </section>
 
-    <section class="py-5 bg-light">
-        <div class="container py-5">
+    <section class="py-5 bg-light overflow-hidden">
+        <div class="container">
             <div class="row g-4 justify-content-center">
                 <!-- Standard Plans using the cards we developed -->
                 <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
@@ -51,7 +61,7 @@
                             <li class="py-2"><i class="bi bi-check text-primary fw-bold"></i> Basic Foundation</li>
                             <li class="py-2 text-muted text-decoration-line-through">Smart Home Integration</li>
                         </ul>
-                        <a href="contact.html" class="thm-btn w-100">Choose Plan</a>
+                        <a href="404.html" class="thm-btn w-100">Choose Plan</a>
                     </div>
                 </div>
                 <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
@@ -67,7 +77,7 @@
                             <li class="py-2"><i class="bi bi-check text-primary fw-bold"></i> Solar Panel Readiness</li>
                             <li class="py-2"><i class="bi bi-check text-primary fw-bold"></i> Interior Designing</li>
                         </ul>
-                        <a href="contact.html" class="thm-btn w-100" style="background: #fff; color: var(--primary);">Choose Plan</a>
+                        <a href="404.html" class="thm-btn w-100" style="background: #fff; color: var(--primary);">Choose Plan</a>
                     </div>
                 </div>
                 <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
@@ -82,31 +92,31 @@
                             <li class="py-2"><i class="bi bi-check text-primary fw-bold"></i> Landscape Architecture</li>
                             <li class="py-2"><i class="bi bi-check text-primary fw-bold"></i> Lifetime Maintenance</li>
                         </ul>
-                        <a href="contact.html" class="thm-btn w-100">Choose Plan</a>
+                        <a href="404.html" class="thm-btn w-100">Choose Plan</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Comparison Table for "Niraiya Content" -->
-            <div class="mt-5 pt-5" data-aos="fade-up">
-                <h2 class="text-center fw-bold mb-4 text-secondary">Plan Comparison</h2>
-                <div class="table-responsive bg-white rounded-4 shadow p-4">
-                    <table class="table align-middle">
+            <div class="pt-5" data-aos="fade-up">
+                <h2 class="text-center display-6 fw-bold mb-5 text-secondary">Detailed Plan Comparison</h2>
+                <div class="table-responsive shadow-lg rounded-4 border-0">
+                    <table class="table comparison-table align-middle mb-0">
                         <thead>
                             <tr>
-                                <th>Feature</th>
-                                <th class="text-center">Basic</th>
-                                <th class="text-center text-primary">Premium</th>
-                                <th class="text-center">Luxury</th>
+                                <th class="feature-head">Service Features</th>
+                                <th class="text-center plan-head">Basic Build</th>
+                                <th class="text-center plan-head active-head">Premium Build</th>
+                                <th class="text-center plan-head">Luxury Build</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr><td>Engineering Consultation</td><td class="text-center">2 Hours</td><td class="text-center">Unlimited</td><td class="text-center">On-Site Dedicated</td></tr>
-                            <tr><td>Material Warranty</td><td class="text-center">5 Years</td><td class="text-center">15 Years</td><td class="text-center">Life-time</td></tr>
-                            <tr><td>Completion Buffer</td><td class="text-center">30 Days</td><td class="text-center text-success fw-bold">0 Days</td><td class="text-center text-success fw-bold">0 Days</td></tr>
-                            <tr><td>Structure Stability Audit</td><td class="text-center"><i class="bi bi-check text-primary"></i></td><td class="text-center text-primary"><i class="bi bi-check"></i></td><td class="text-center"><i class="bi bi-check text-primary"></i></td></tr>
-                            <tr><td>Interior Painting</td><td class="text-center"><i class="bi bi-check text-primary"></i></td><td class="text-center text-primary"><i class="bi bi-check"></i></td><td class="text-center"><i class="bi bi-check text-primary"></i></td></tr>
-                            <tr><td>Garden Design</td><td class="text-center">No</td><td class="text-center text-primary">Basic</td><td class="text-center">Advanced</td></tr>
+                            <tr data-aos="fade-up" data-aos-delay="100"><td>Engineering Consultation</td><td class="text-center">2 Hours</td><td class="text-center fw-bold text-dark">Unlimited</td><td class="text-center">On-Site Dedicated</td></tr>
+                            <tr data-aos="fade-up" data-aos-delay="150"><td>Material Warranty</td><td class="text-center">5 Years</td><td class="text-center fw-bold text-dark">15 Years</td><td class="text-center">Life-time</td></tr>
+                            <tr data-aos="fade-up" data-aos-delay="200"><td>Completion Buffer</td><td class="text-center">30 Days</td><td class="text-center text-primary fw-bold">0 Days</td><td class="text-center text-primary fw-bold">0 Days</td></tr>
+                            <tr data-aos="fade-up" data-aos-delay="250"><td>Structure Stability Audit</td><td class="text-center"><i class="bi bi-check-circle-fill text-primary"></i></td><td class="text-center"><i class="bi bi-check-circle-fill text-primary"></i></td><td class="text-center"><i class="bi bi-check-circle-fill text-primary"></i></td></tr>
+                            <tr data-aos="fade-up" data-aos-delay="300"><td>Interior Painting</td><td class="text-center"><i class="bi bi-check-circle-fill text-primary"></i></td><td class="text-center"><i class="bi bi-check-circle-fill text-primary"></i></td><td class="text-center"><i class="bi bi-check-circle-fill text-primary"></i></td></tr>
+                            <tr data-aos="fade-up" data-aos-delay="350"><td>Garden Design</td><td class="text-center text-muted"><i class="bi bi-dash-circle"></i></td><td class="text-center text-primary">Basic Layout</td><td class="text-center">Advanced Scaping</td></tr>
+                            <tr data-aos="fade-up" data-aos-delay="400"><td>Smart Home Setup</td><td class="text-center text-muted"><i class="bi bi-dash-circle"></i></td><td class="text-center text-primary"><i class="bi bi-check-circle-fill"></i></td><td class="text-center"><i class="bi bi-check-circle-fill text-primary"></i></td></tr>
                         </tbody>
                     </table>
                 </div>

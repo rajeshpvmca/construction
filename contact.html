@@ -11,10 +11,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        .page-header {
-            background: linear-gradient(rgba(0, 22, 89, 0.8), rgba(0, 22, 89, 0.8)), url('assets/images/materials4.webp') center/cover;
-            padding: 120px 0 80px; color: #fff; text-align: center;
-        }
         .contact-icon-box { width: 70px; height: 70px; background: #fff3eb; color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; transition: 0.3s; }
         .contact-info-item:hover .contact-icon-box { background: var(--primary); color: #fff; }
     </style>
@@ -29,10 +25,23 @@
     </div>
     <div id="header-placeholder"></div>
 
-    <section class="page-header overflow-hidden">
-        <div class="container" data-aos="fade-down">
-            <h1 class="display-4 fw-bold">Get In Touch</h1>
-            <p>Ready to build? We are here to help you every step of the way.</p>
+    <section class="slide-bg overflow-hidden" style="background-image:url('assets/images/materials4.webp');">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="hero-content text-center text-lg-start">
+                <span class="hero-subtitle mb-4" data-aos="fade-right" data-aos-delay="100">
+                    <i class="fas fa-envelope me-2"></i> CONTACT US
+                </span>
+                <h1 class="text-white fw-bold mb-4" data-aos="fade-up" data-aos-delay="300">
+                    Let's Build Your <span class="text-primary-glow">Future</span>
+                </h1>
+                <p class="lead fs-4 mb-5 max-w-700 text-white mx-auto mx-lg-0" data-aos="fade-up" data-aos-delay="500">
+                    Ready to start your dream project? Our team is here to help you every step of the way, from concept to completion.
+                </p>
+                <a href="404.html" class="btn thm-btn " data-aos="fade-up" data-aos-delay="700">
+                    Send Message +
+                </a>
+            </div>
         </div>
     </section>
 
@@ -64,9 +73,9 @@
                     <div class="mt-4">
                         <h5 class="fw-bold text-secondary mb-3">Follow Our Progress</h5>
                         <div class="d-flex gap-3">
-                            <a href="#" class="btn btn-primary rounded-circle"><i class="bi bi-facebook"></i></a>
-                            <a href="#" class="btn btn-primary rounded-circle"><i class="bi bi-linkedin"></i></a>
-                            <a href="#" class="btn btn-primary rounded-circle"><i class="bi bi-twitter-x"></i></a>
+                            <a href="404.html" class="contact-social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="404.html" class="contact-social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="404.html" class="contact-social-icon"><i class="fab fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>

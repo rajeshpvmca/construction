@@ -11,10 +11,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        .page-header {
-            background: linear-gradient(rgba(0, 22, 89, 0.8), rgba(0, 22, 89, 0.8)), url('assets/images/materials3.webp') center/cover;
-            padding: 120px 0 80px; color: #fff; text-align: center;
-        }
         .sidebar-box { background: #f8f9fa; border-radius: 15px; padding: 25px; margin-bottom: 30px; }
     </style>
 </head>
@@ -27,22 +23,37 @@
     </div>
     <div id="header-placeholder"></div>
 
-    <section class="page-header overflow-hidden">
-        <div class="container" data-aos="fade-down">
-            <h1 class="display-4 fw-bold">Latest Industry News</h1>
-            <p>Guides, trends, and expert advice for construction.</p>
+    <section class="slide-bg overflow-hidden" style="background-image:url('assets/images/blog-banner.webp');">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="hero-content text-center text-lg-start">
+                <span class="hero-subtitle mb-4" data-aos="fade-right" data-aos-delay="100">
+                    <i class="fas fa-newspaper me-2"></i> INDUSTRY NEWS
+                </span>
+                <h1 class="text-white fw-bold mb-4" data-aos="fade-up" data-aos-delay="300">
+                    Latest <span class="text-primary-glow">Construction</span> Insights
+                </h1>
+                <p class="lead fs-4 mb-5 max-w-700 text-white mx-auto mx-lg-0" data-aos="fade-up" data-aos-delay="500">
+                    Explore our expert guides, industry trends, and professional advice to stay ahead in the world of construction.
+                </p>
+                <a href="404.html" class="btn thm-btn" data-aos="fade-up" data-aos-delay="700">
+                    Read Articles +
+                </a>
+            </div>
         </div>
     </section>
 
     <section class="py-5 overflow-hidden">
-        <div class="container py-5">
+        <div class="container">
             <div class="row g-5">
                 <div class="col-lg-8">
                     <div class="row g-4">
                         <!-- Repeatable Blog Items -->
-                        <div class="col-12" data-aos="fade-up">
-                            <div class="blog-card border-0 shadow-sm rounded-4 overflow-hidden"> 
-                                <img src="assets/images/feature1.webp" class="w-100" style="height: 400px; object-fit: cover;" alt="">
+                        <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+                            <div class="blog-card border-0 shadow-sm overflow-hidden"> 
+                                <div class="overflow-hidden">
+                                    <img src="assets/images/blog1.webp" class="w-100" style="height: 400px; object-fit: cover;" alt="">
+                                </div>
                                 <div class="p-4">
                                     <div class="mb-2 text-primary small fw-bold">CONSTRUCTION | JULY 24, 2024</div>
                                     <h2 class="fw-bold text-secondary mb-3">10 Critical Steps for a Successful Building Foundation</h2>
@@ -51,9 +62,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 mt-5" data-aos="fade-up">
-                            <div class="blog-card border-0 shadow-sm rounded-4 overflow-hidden"> 
-                                <img src="assets/images/feature2.webp" class="w-100" style="height: 400px; object-fit: cover;" alt="">
+                        <div class="col-12 mt-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="blog-card border-0 shadow-sm overflow-hidden"> 
+                                <div class="overflow-hidden">
+                                    <img src="assets/images/blog2.webp" class="w-100" style="height: 400px; object-fit: cover;" alt="">
+                                </div>
                                 <div class="p-4">
                                     <div class="mb-2 text-primary small fw-bold">TECHNOLOGY | JULY 15, 2024</div>
                                     <h2 class="fw-bold text-secondary mb-3">How Smart Glass is Revolutionizing Energy Efficient Cities</h2>
@@ -65,20 +78,20 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="sidebar-box" data-aos="fade-left">
+                    <div class="sidebar-box shadow-sm mb-4" data-aos="fade-left" data-aos-delay="300">
                         <h5 class="fw-bold text-secondary mb-3">Search Posts</h5>
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Keywords...">
-                            <button class="btn btn-primary"><i class="bi bi-search"></i></button>
+                            <input type="text" class="form-control border-0 bg-light" placeholder="Keywords...">
+                            <button class="btn btn-primary bg-primary border-0"><i class="bi bi-search"></i></button>
                         </div>
                     </div>
-                    <div class="sidebar-box" data-aos="fade-left" data-aos-delay="100">
+                    <div class="sidebar-box shadow-sm mb-4" data-aos="fade-left" data-aos-delay="400">
                         <h5 class="fw-bold text-secondary mb-3">Categories</h5>
                         <ul class="list-unstyled">
-                            <li class="mb-2 d-flex justify-content-between"><span>Architecture</span> <span class="badge bg-white text-primary shadow-sm">(12)</span></li>
-                            <li class="mb-2 d-flex justify-content-between"><span>Eco Building</span> <span class="badge bg-white text-primary shadow-sm">(8)</span></li>
-                            <li class="mb-2 d-flex justify-content-between"><span>Safety News</span> <span class="badge bg-white text-primary shadow-sm">(15)</span></li>
-                            <li class="mb-2 d-flex justify-content-between"><span>Company News</span> <span class="badge bg-white text-primary shadow-sm">(4)</span></li>
+                            <li class="mb-3 d-flex justify-content-between align-items-center"><span>Architecture</span> <span class="badge bg-light text-primary rounded-pill">12</span></li>
+                            <li class="mb-3 d-flex justify-content-between align-items-center"><span>Eco Building</span> <span class="badge bg-light text-primary rounded-pill">08</span></li>
+                            <li class="mb-3 d-flex justify-content-between align-items-center"><span>Safety News</span> <span class="badge bg-light text-primary rounded-pill">15</span></li>
+                            <li class="mb-3 d-flex justify-content-between align-items-center"><span>Company News</span> <span class="badge bg-light text-primary rounded-pill">04</span></li>
                         </ul>
                     </div>
                     <div class="sidebar-box bg-primary text-white text-center" data-aos="zoom-in">

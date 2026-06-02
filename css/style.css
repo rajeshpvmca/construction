@@ -805,6 +805,10 @@ background-color: #ff5e14 !important;
     transition: 0.5s;
 }
 
+.blog-card img {
+    transition: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .blog-card:hover .blog-img-box img {
     transform: scale(1.1);
 }
@@ -1203,4 +1207,95 @@ background-color: #ff5e14 !important;
 .btn-outline-light:hover .btn-icon {
     background: var(--primary)!important;
     color: #212529 !important;
+}
+
+/* contact page */
+.contact-social-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 22, 89, 0.1);
+    border-radius: 50%;
+    color: var(--dark);
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.contact-social-icon:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+    transform: translateY(-5px) rotate(360deg);
+    box-shadow: 0 10px 20px rgba(255, 94, 20, 0.3);
+}
+
+/* Modern Comparison Table Styles */
+.comparison-table {
+    border-radius: 15px;
+    overflow: hidden;
+    border: none !important;
+}
+
+.comparison-table thead th {
+    padding: 30px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    border: none;
+}
+
+.comparison-table .feature-head {
+    background: var(--dark);
+    color: white;
+}
+
+.comparison-table .plan-head {
+    background: #f8f9fa;
+    color: var(--dark);
+}
+
+.comparison-table .active-head {
+    background: var(--primary) !important;
+    color: white !important;
+}
+
+.comparison-table tbody td {
+    padding: 20px;
+    border-bottom: 1px solid #f1f1f1;
+    color: #666;
+    transition: 0.3s;
+}
+
+.comparison-table tbody tr:hover td {
+    background: rgba(255, 94, 20, 0.05);
+    color: var(--dark);
+    font-weight: 500;
+}
+
+/* Blog Sidebar Enhancements */
+.sidebar-box {
+    transition: all 0.4s ease;
+    border: 1px solid transparent;
+}
+
+.sidebar-box:hover {
+    transform: translateY(-5px);
+    background: #fff !important;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+    border-color: rgba(255, 94, 20, 0.1);
+}
+
+.sidebar-box ul li {
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+.sidebar-box ul li:hover {
+    color: var(--primary);
+    transform: translateX(5px);
 }
