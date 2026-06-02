@@ -1,5 +1,12 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.fw-extrabold { font-weight: 800; }
+
+.text-primary-glow {
+    color: var(--primary);
+    text-shadow: 0 0 15px rgba(255, 94, 20, 0.3);
 }
 
 .navbar {
@@ -93,7 +100,7 @@ body {
 
 .slide-bg{
 
-    min-height:100vh;
+    min-height: 105vh;
 
     background-size:cover;
     background-position:center;
@@ -102,6 +109,16 @@ body {
     align-items:center;
 
     position:relative;
+    transition: transform 10s ease;
+}
+
+/* Modern Background Zoom Animation */
+.swiper-slide-active .slide-bg {
+    transform: scale(1.07);
+}
+
+.hero-content {
+    max-width: 850px;
 }
 
 .overlay{
@@ -113,34 +130,49 @@ body {
     rgba(0,20,90,.65);
 }
 
-.hero-content{
-
-    position:relative;
-    z-index:2;
-
-    color:#fff;
-
-    margin:auto;
+.hero-content h1 {
+    font-size: clamp(2.5rem, 6vw, 4.5rem); /* Modern responsive font sizing */
+    line-height: 1.05;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    text-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
-.hero-subtitle{
-
-    display:block;
-
-    font-size:22px;
-    font-weight:700;
-
-    margin-bottom:25px;
-
-    letter-spacing:1px;
+.hero-content p {
+    opacity: 0.85;
+    line-height: 1.6;
 }
-
 
 .hero-content .hero-subtitle {
     background: var(--primary);
     display: inline-block;
-    padding: 5px 20px;
+    padding: 8px 25px;
     border-radius: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    box-shadow: 0 5px 15px rgba(255, 94, 20, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+@media (max-width: 991px) {
+    .hero-content {
+        padding-top: 80px;
+    }
+    .hero-content h1 {
+        margin-bottom: 20px !important;
+    }
+    .hero-content .hero-subtitle {
+        font-size: 13px;
+        padding: 6px 18px;
+        letter-spacing: 1px;
+    }
+    .hero-content p {
+        font-size: 1.1rem !important;
+        margin-bottom: 35px !important;
+    }
 }
 
 /* ARROWS */
