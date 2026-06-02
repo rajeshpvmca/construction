@@ -1385,9 +1385,10 @@ background-color: #ff5e14 !important;
 
 .sidebar {
     width: 260px;
-    height: calc(100vh - 81px);
-    position: sticky;
+    height: 100vh;
+    position: fixed;
     top: 81px;
+    left: 0;
     background: #fff;
     border-right: 1px solid rgba(0,0,0,0.05);
     transition: all 0.3s ease-in-out;
@@ -1412,6 +1413,7 @@ background-color: #ff5e14 !important;
 
 .content {
     flex: 1;
+    margin-left: 260px;
     padding: 25px;
     width: 100%;
     transition: all 0.3s ease;
@@ -1438,6 +1440,9 @@ background-color: #ff5e14 !important;
         background: rgba(0,0,0,0.5);
         z-index: 1030;
         backdrop-filter: blur(2px);
+    }
+    .content {
+        margin-left: 0;
     }
     .sidebar-overlay.show {
         display: block;
