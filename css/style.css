@@ -1038,6 +1038,7 @@ background-color: #ff5e14 !important;
 }
 
 .team-img-wrapper img {
+    height: 350px;
     transition: transform 0.6s ease;
 }
 
