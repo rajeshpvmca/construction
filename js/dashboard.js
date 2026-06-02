@@ -258,7 +258,7 @@ function renderRoleDashboard() {
       <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
         <div class="card border-0 shadow-sm p-4 rounded-4 h-100 bg-white">
           <div class="d-flex align-items-center justify-content-between mb-3">
-            <div class="bg-primary p-3 rounded-circle text-white d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;"><i class="fa fa-money h4 mb-0"></i></div>
+            <div class="bg-primary p-3 rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;"><i class="fa-solid fa-money-bill h4 mb-0 text-white"></i></div>
             <span class="badge bg-success">+$2.4k</span>
           </div>
           <h2 class="fw-bold mb-1">$845k</h2>

@@ -39,10 +39,20 @@
                     <input class="form-control mb-3" type="email" id="email" placeholder="name@company.com" required>
 
                     <label class="form-label fw-bold text-secondary">Password</label>
-                    <input class="form-control mb-3" type="password" id="password" placeholder="Enter password" required>
+                    <div class="input-group mb-3">
+                        <input class="form-control" type="password" id="password" placeholder="Enter password" required>
+                        <button class="btn btn-outline-secondary toggle-password" type="button">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
 
                     <label class="form-label fw-bold text-secondary">Confirm Password</label>
-                    <input class="form-control mb-3" type="password" id="confirmPassword" placeholder="Confirm password" required>
+                    <div class="input-group mb-3">
+                        <input class="form-control" type="password" id="confirmPassword" placeholder="Confirm password" required>
+                        <button class="btn btn-outline-secondary toggle-password" type="button">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
 
                     <div class="form-check mb-4">
                         <input class="form-check-input" type="checkbox" id="terms" required>
