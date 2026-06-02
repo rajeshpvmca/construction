@@ -10,15 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
-    <style>
-        .page-header {
-            background: linear-gradient(rgba(0, 22, 89, 0.8), rgba(0, 22, 89, 0.8)), url('assets/images/slider2.webp') center/cover;
-            padding: 120px 0 80px;
-            color: #fff;
-            text-align: center;
-        }
-        .service-card { border: 1px solid rgba(255,255,255,0.1); }
-    </style>
+    <style> /* The .service-card border style has been moved to style.css if needed, otherwise removed */ </style>
 </head>
 <body>
     <div id="preloader">
@@ -30,15 +22,23 @@
     </div>
     <div id="header-placeholder"></div>
 
-    <section class="page-header">
-        <div class="container" data-aos="fade-down">
-            <h1 class="display-4 fw-bold">Construction Services</h1>
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
-                    <li class="breadcrumb-item active text-primary" aria-current="page">Services</li>
-                </ol>
-            </nav>
+    <section class="slide-bg overflow-hidden" style="background-image:url('assets/images/service-banner.webp');">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="hero-content text-center text-lg-start">
+                <span class="hero-subtitle mb-4" data-aos="fade-right" data-aos-delay="100">
+                    <i class="fas fa-tools me-2"></i> OUR SERVICES
+                </span>
+                <h1 class="text-white fw-bold mb-4" data-aos="fade-up" data-aos-delay="300">
+                    Professional <span class="text-primary-glow">Project</span> Solutions
+                </h1>
+                <p class="lead fs-4 mb-5 max-w-700 text-white mx-auto mx-lg-0" data-aos="fade-up" data-aos-delay="500">
+                    We offer a comprehensive range of construction services tailored to meet your unique needs and exceed expectations.
+                </p>
+                <a href="contact.html" class="btn thm-btn" data-aos="fade-up" data-aos-delay="700">
+                    View Our Projects +
+                </a>
+            </div>
         </div>
     </section>
 
