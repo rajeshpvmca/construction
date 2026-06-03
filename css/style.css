@@ -117,9 +117,9 @@ body {
 }
 
 .slide-bg{
-
-    min-height: 105vh;
-
+    min-height: 100vh;
+    /* Support for modern mobile browsers */
+    min-height: 100svh;
     background-size:cover;
     background-position:center;
 
@@ -154,6 +154,7 @@ body {
     letter-spacing: -1px;
     text-transform: uppercase;
     text-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    max-width: 100%;
 }
 
 .hero-content p {
@@ -177,19 +178,25 @@ body {
 
 @media (max-width: 991px) {
     .hero-content {
-        padding-top: 80px;
+        padding-top: 100px;
+        padding-bottom: 50px;
     }
     .hero-content h1 {
-        margin-bottom: 20px !important;
+        margin-bottom: 15px !important;
+        font-size: 1.8rem;
     }
     .hero-content .hero-subtitle {
-        font-size: 13px;
-        padding: 6px 18px;
+        font-size: 12px;
+        padding: 5px 15px;
         letter-spacing: 1px;
     }
     .hero-content p {
         font-size: 1.1rem !important;
-        margin-bottom: 35px !important;
+        margin-bottom: 30px !important;
+    }
+    
+    .slide-bg {
+        min-height: 80vh;
     }
 }
 
@@ -336,6 +343,7 @@ body {
     position: relative;
     padding: 20px;
     border-radius: 0 180px 0 180px;
+    max-width: 100%;
     background: #eaeaea;
 }
 
@@ -772,6 +780,7 @@ background-color: #ff5e14 !important;
     background: #fff;
     padding: 50px 40px;
     border-radius: 20px;
+    height: 100%;
     box-shadow: 0 10px 40px rgba(0,0,0,0.05);
     transition: all 0.4s ease;
     border: 1px solid #eee;
@@ -1361,6 +1370,7 @@ background-color: #ff5e14 !important;
 
 .auth-card {
    
+    margin: 0 auto;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
@@ -1446,5 +1456,22 @@ background-color: #ff5e14 !important;
     }
     .sidebar-overlay.show {
         display: block;
+    }
+}
+
+/* Global Responsive Spacing Adjustments */
+@media (max-width: 768px) {
+    .py-5 {
+        padding-top: 3.5rem !important;
+        padding-bottom: 3.5rem !important;
+    }
+    
+    .display-6 {
+        font-size: 1.8rem;
+    }
+    
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
