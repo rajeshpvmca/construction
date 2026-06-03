@@ -1316,6 +1316,12 @@ background-color: #ff5e14 !important;
     border-color: rgba(255, 94, 20, 0.1);
 }
 
+/* bg-primary கொண்ட sidebar-box-க்கான பிரத்யேக hover ஸ்டைல் */
+.sidebar-box.bg-primary:hover {
+    background: var(--dark) !important; /* வெள்ளையாக மாறாமல் டார்க் ப்ளூவாக மாறும் */
+    border-color: var(--primary);
+}
+
 .sidebar-box ul li {
     transition: 0.3s;
     cursor: pointer;
