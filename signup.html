@@ -16,7 +16,7 @@
 
     <div class="auth-wrapper">
         <!-- Form Side -->
-        <div class="auth-form-side px-3 py-4 py-lg-5 px-lg-5" data-aos="fade-up">
+        <div class="auth-form-side px-3 py-4 py-lg-5 px-lg-5" data-aos="fade-right">
             <div class="auth-card w-100 bg-white p-xl-5 p-4 rounded-5" style="max-width: 500px;">
                 <div class="text-center mb-4">
                     <a href="index.html" class="text-primary small text-decoration-none fw-bold"><i class="fas fa-arrow-left me-2"></i> Back to Home</a>
@@ -73,6 +73,7 @@
 
         <!-- Image Side (Visible on Large Screens) -->
         <div class="auth-image-side" data-aos="zoom-in">
+            <div id="tsparticles"></div>
             <div class="text-center text-white p-5">
                 <a href="index.html" class="mb-4 d-inline-block">
                     <img src="assets/images/logoStackly.webp" alt="Logo" style="height: 60px;">
@@ -86,7 +87,51 @@
 
     <script src="js/auth.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
     <script>
+        tsParticles.load("tsparticles", {
+            particles: {
+                number: { value: 60, density: { enable: true, value_area: 800 } },
+                color: { value: "#ff5e14" },
+                shape: { type: "circle" },
+                opacity: {
+                    value: 0.5,
+                    random: true,
+                    anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false }
+                },
+                size: {
+                    value: 3,
+                    random: true,
+                    anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#ff5e14",
+                    opacity: 0.3,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 1.5,
+                    direction: "none",
+                    random: false,
+                    straight: false,
+                    out_mode: "out",
+                    bounce: false,
+                }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: { enable: true, mode: "grab" },
+                    onclick: { enable: true, mode: "push" },
+                    resize: true
+                }
+            },
+            retina_detect: true
+        });
+
         document.addEventListener('DOMContentLoaded', function() {
             AOS.init({
                 duration: 1000,
